@@ -2,12 +2,11 @@
 html { height: 100%; }
 body { min-height: 100%; }
 body {
-  border:5px solid black;
+  border:5px solid lightgreen;
   border-width: 25px;
 }
 body{
   font-family: "Avenir Next";
-  background-color: lightgreen;
 }
 li{
   list-style: none;
