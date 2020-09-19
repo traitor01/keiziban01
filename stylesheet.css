@@ -1,8 +1,7 @@
-* { box-sizing: border-box; }
 html { height: 100%; }
 body { min-height: 100%; }
 body {
-  border-image: url(rounded-edge.png) 25% repeat;
+  border:5px solid black;
   border-width: 25px;
 }
 body{
