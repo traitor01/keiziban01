@@ -1,6 +1,6 @@
 body {
   font-family: "Avenir Next";
-  width: 1400px;
+  width: 1300px;
   margin:auto;
   padding:0px;
 }
@@ -22,7 +22,7 @@ li{
   padding:30px 30px;
   font-size:36px;
   text-decoration:underline;
-  text-decoration-color:lightgreen;
+  text-decoration-color:plum;
 }
 .main{
   background-color: white;
