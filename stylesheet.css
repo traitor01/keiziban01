@@ -51,9 +51,12 @@ input{
   height:120px;
   padding:40px;
 }
-.footer-logo{
+.footer-logo a{
   float:left;
-  font-size:32px;
+  font-size:40px;
+  padding: 30px;
+  color:white;
+  text-decoration: none
 }
 .footer-list{
   float:right;
