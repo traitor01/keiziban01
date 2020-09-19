@@ -1,7 +1,7 @@
 body {
   font-family: "Avenir Next";
   width: 1250px;
-  padding:0px;
+  margin:auto;
 }
 li{
   list-style: none;
@@ -30,7 +30,7 @@ li{
 .box{
   float:left;
   font-size: 80px;
-  width:650px; height:300px;
+  width:650px; height:390px;
   margin-top: -115px;
   margin-left: -70px;
   border:1px solid black;
@@ -41,6 +41,9 @@ li{
 }
 input{
   font-size: 26px;
+}
+.honbun{
+  float:left;
 }
 .string-text{
   width:380px;
