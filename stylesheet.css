@@ -1,6 +1,6 @@
 body {
   font-family: "Avenir Next";
-  width: 1250px;
+  width: 1275px;
   margin:auto;
 }
 li{
@@ -30,7 +30,7 @@ li{
 .box{
   float:left;
   font-size: 80px;
-  width:650px; height:390px;
+  width:650px; height:350px;
   margin-top: -115px;
   margin-left: -70px;
   border:1px solid black;
