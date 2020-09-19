@@ -1,11 +1,7 @@
-* { box-sizing: border-box; }
-html { height: 100%; }
-body { min-height: 100%; }
 body {
   border:1px solid lightgreen;
-  border-width: 25px;
-}
-body{
+  border-width: 20px;
+  border-top:10px  lightgreen;
   font-family: "Avenir Next";
 }
 li{
@@ -21,18 +17,6 @@ li{
   font-size:60px;
   padding:20px 40px;
 }
-/*
-.header-list{
-  float:left;
-}
-*/
-/*
-.header-list li{
-  float:left;
-  padding:30px 20px;
-  font-size:36px;
-}
-*/
 .maker{
   float:right;
   padding:30px 30px;
