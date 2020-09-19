@@ -1,7 +1,6 @@
 body {
   font-family: "Avenir Next";
-  max-width: 1400px;
-  margin: auto;
+  width: 1250px;
 }
 li{
   list-style: none;
