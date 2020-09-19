@@ -1,68 +1,78 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>市川生専用チャット</title>
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">市川茶っと</div>
-      <div class="header-list">
-        <ul>
-          <li class="maker">製作者:ハリポタ</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="copy-container">
-        <!--
-        <h1>ここら辺にチャット画面<span>☆</span></h1>
-        -->
-        <div class="box">多分チャットが入ります(予定)</div>
-        <ul>
-          <li>
-            <p>
-            名前<p></p>
-            <input type="text" name="name" size="10" maxlength="20">
-            </p>
-          </li>
-          <li>
-            <p>
-            本文<p></p>
-            <textarea class="string-text"></textarea>
-            </p>
-          </li>
-          <li>
-            <p>
-            <input class="add" type="submit" value="送信する">
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="contents">
-      </div>
-
-      <div class="contact-form">
-      </div>
-
-    </div>
-
-    <div class="footer">
-      <div class="footer-logo">
-        <a href="https://traitor01.github.io/keiziban01/">
-        市川茶っと
-        </a>
-      </div>
-      <div class="footer-list">
-        <ul>
-          <li>製作動機</li>
-          <li>電子説明書</li>
-          <li>お問い合わせ</li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+body {
+  font-family: "Avenir Next";
+  width: 1200px;
+  margin:auto;
+}
+li{
+  list-style: none;
+}
+.header{
+  background-color:#26d0c9;
+  color:#fff;
+  height:90px;
+}
+.header-logo{
+  float:left;
+  font-size:60px;
+  padding:20px 40px;
+}
+.maker{
+  float:right;
+  padding:30px 30px;
+  font-size:36px;
+}
+.main{
+  background-color: white;
+  padding:100px 80px;
+}
+.box{
+  float:left;
+  font-size: 80px;
+  width:650px; height:350px;
+  margin-top: -115px;
+  margin-left: -70px;
+  border:1px solid black;
+  background-color:lightgray;
+}
+.copy-container p{
+  font-size:26px;
+}
+input{
+  font-size: 26px;
+}
+.string-text{
+  width:380px;
+  height: 100px;
+  font-size: 26px;
+  float:right;
+}
+.add{
+  margin:10px;
+}
+.school{
+  margin-top:-10px;
+  margin-left:-70px;
+}
+.in-school{
+  width:350px
+  border:1px solid black;
+}
+.footer{
+  background-color: #2f5167;
+  color:#fff;
+  height:120px;
+  padding:40px;
+}
+.footer-logo a{
+  float:left;
+  font-size:40px;
+  padding: 30px;
+  color:white;
+  text-decoration: none
+}
+.footer-list{
+  float:right;
+}
+.footer-list li{
+  padding-bottom:20px;
+}
