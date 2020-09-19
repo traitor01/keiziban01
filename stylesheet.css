@@ -2,7 +2,7 @@
 html { height: 100%; }
 body { min-height: 100%; }
 body {
-  border:5px solid lightgreen;
+  border:1px solid lightgreen;
   border-width: 25px;
 }
 body{
