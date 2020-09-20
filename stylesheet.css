@@ -30,7 +30,7 @@ li{
 .box{
   float:left;
   font-size: 80px;
-  width:650px; height:490px;
+  width:650px; height:500px;
   margin-top: -115px;
   margin-left: -70px;
   border:1px solid black;
@@ -46,7 +46,7 @@ input{
   float:left;
 }
 .string-text{
-  width:400px;
+  width:410px;
   height: 110px;
   font-size: 26px;
   float:right;
