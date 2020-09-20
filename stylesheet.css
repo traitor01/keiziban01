@@ -30,7 +30,7 @@ li{
 .box{
   float:left;
   font-size: 80px;
-  width:650px; height:375px;
+  width:650px; height:400px;
   margin-top: -115px;
   margin-left: -70px;
   border:1px solid black;
@@ -59,7 +59,7 @@ input{
   margin-left:-70px;
 }
 .in-school{
-  width:390px;
+  width:400px;
 }
 .footer{
   background-color: #2f5167;
