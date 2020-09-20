@@ -1,6 +1,10 @@
 body {
   width: 1250px;
   margin:auto;
+  background-color: white;
+  border:15px solid lightgreen;
+  border-top:15px solid rebeccapurple;
+  border-bottom:15px solid rebeccapurple;
 }
 li{
   list-style: none;
