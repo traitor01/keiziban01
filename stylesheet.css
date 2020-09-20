@@ -38,8 +38,9 @@ li{
 .copy-container p{
   font-size:26px;
 }
-input{
+.in-name{
   font-size: 26px;
+  width:250px;
   border:1px solid black;
 }
 .honbun{
@@ -52,8 +53,9 @@ input{
   float:right;
   border:1px solid black;
 }
-.add{
+.bottom{
   margin:10px;
+  font-size:26px;
 }
 .footer{
   background-color: #2f5167;
@@ -75,16 +77,4 @@ input{
 }
 .footer-list a{
   color:white;
-}
-.remark{
-    background: none repeat scroll 0 0 #EEFFEE;
-    border: 1px solid #CCCCCC;
-    color: #000000;
-    display: block;
-    line-height: 1.2em;
-    margin: 0.5em;
-    padding: 0.5em;
-    position: absolute;
-    top: 50px;
-    width: 12em;
 }
