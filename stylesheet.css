@@ -40,6 +40,7 @@ li{
 }
 input{
   font-size: 26px;
+  border:1px solid black;
 }
 .honbun{
   float:left;
@@ -49,6 +50,7 @@ input{
   height: 110px;
   font-size: 26px;
   float:right;
+  border:1px solid black;
 }
 .add{
   margin:10px;
