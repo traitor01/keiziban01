@@ -46,6 +46,9 @@ li{
   width:250px;
   border:1px solid black;
 }
+.name ::placeholder {
+  color: rgb(255, 92, 92);
+}
 .honbun{
   float:left;
 }
