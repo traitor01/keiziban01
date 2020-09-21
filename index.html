@@ -16,18 +16,50 @@
     </div>
     <div class="main">
       <div class="copy-container">
-        <div class="box">多分チャットが入ります(予定)</div>
+        <div id="output_message" class="box">多分チャットが入ります(予定)</div>
         <ul>
           <li>
-            <p class="name">名前:<input class="in-name" type="text" name="name" size="10" maxlength="20" required></p>
+            <p class="name">名前:<input placeholder="必須" class="in-name" type="text" name="name" size="10" maxlength="20" required></p>
           </li>
           <li>
-            <p class="honbun">
-            本文:<textarea class="string-text"></textarea>
-            </p>
+            <form id="form1" action="#">
+              <p class="honbun">本文:<textarea id="in_massage" rows="6" class="string-text" placeholder="入力してください"></textarea>
+<!--javascript->
+              <script>
+                // 入力できる行数の最大値
+                let MAX_LINE_NUM = 6;
+                // テキストエリアの取得
+                let textarea = document.getElementById("in_message");
+                // 入力ごとに呼び出されるイベントを設定
+                textarea.addEventListener("input", function() {
+                 // 各行を配列の要素に分ける
+                  let lines = textarea.value.split("\n");
+                  // 入力行数が制限を超えた場合
+                  if (lines.length > MAX_LINE_NUM) {
+                    var result = "";
+                    for (var i = 0; i < MAX_LINE_NUM; i++) {
+                      result += lines[i] + "\n";
+                    }
+                    textarea.value = result;
+                  }
+                }, false);
+              </script>
+<!--javascript-->
+              </p>
+            </form>
           </li>
         </ul>
-        <input class="bottom" type="submit" value="送信する">
+        <input class="bottom" type="button" onclick="func1()" value="送信する">
+<!--
+        </form>
+        <script language="javascript" type="text/javascript">
+        function func1() {
+          var input_message = document.getElementById("input_message").value;
+          input_message = "入力された内容は「" + input_message + "」です。";
+          document.getElementById("output_message").innerHTML = input_message;
+        }
+        </script>
+-->
       </div>
       <div class="contents">
       </div>
@@ -59,6 +91,5 @@ Microsoft Edge専用です。それ以外で見ると正しく表示され
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
