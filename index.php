@@ -1,8 +1,19 @@
+<?php
+$fp = fopen('data.csv', 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    fputcsv($fp, [$_POST['name'], $_POST['comment']]);
+    rewind($fp);
+}
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+fclose($fp);
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>市川生徒専用チャット1</title>
+    <title>市川生徒専用チャット</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
@@ -14,19 +25,43 @@
         </ul>
       </div>
     </div>
+    <h1>掲示板</h1>
     <div class="main">
       <div class="copy-container">
-        <textarea id="output_message" class="box">多分チャットが入ります(予定)</textarea>
-        <ul>
-          <li>
-            <p class="name">名前:<input placeholder="必須" class="in-name" type="text" name="name" size="10" maxlength="20" required></p>
-          </li>
-          <li>
-            <p class="honbun">本文:<textarea id="in_massage" rows="6" class="string-text" placeholder="入力してください"></textarea>
-            </p>
-          </li>
-        </ul>
-        <input class="bottom" type="submit" value="送信する">
+        <section class="toukou">
+<?php
+ if (!empty($rows)):
+ ?>
+          <ul class="box">
+<?php 
+foreach ($rows as $row): 
+?>
+            <li>名前:<?=$row[0]?> </li>
+            <li>><?=$row[1]?></li>
+<?php 
+endforeach; 
+?>
+          </ul>
+<?php 
+endif;
+?>
+        </section>
+        <section>
+          <form action="" method="post">
+            <ul>
+              <li>
+                <p class="name">名前:<input placeholder="必須" class="in-name" type="text" name="name" size="10" maxlength="20" required></p>
+              </li>
+              <li>
+                <p class="honbun">本文:<textarea name="comment" id="in_massage" rows="6" class="string-text" placeholder="入力してください"></textarea>
+                </p>
+              </li>
+              <li>
+                <input class="bottom" type="submit" value="送信する">
+              </li>
+            </ul>
+          </form>
+        </section>
       </div>
       <div class="contents">
       </div>
