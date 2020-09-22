@@ -6,6 +6,10 @@ body {
   border-top:15px solid rebeccapurple;
   border-bottom:15px solid rebeccapurple;
 }
+h1{
+  font-size: 75px;
+  margin-left:500px;
+}
 li{
   list-style: none;
 }
@@ -29,29 +33,37 @@ li{
 .main{
   background-color: white;
   padding:100px 80px;
+  height:500px;
 }
 .box{
   float:left;
-  font-size: 32px;
-  width:650px; height:540px;
-  margin-top: -115px;
-  margin-left: -70px;
+  font-size: 26px;
+  width:1100px; height:500px;
+  margin-top:-150px;
+  margin-left: -30px;
   border:1px solid #000000;
   background-color:rgb(235, 235, 235);
   resize: none;
+  overflow: scroll;
 }
 .name , .honbun , .in-name , .string-text{
   font-size:26px;
+  float:right;
+}
+.name{
+  float:left;
 }
 .in-name{
   width:250px;
   border:1px solid black;
+  float:right;
 }
 .name ::placeholder {
   color: rgb(255, 92, 92);
 }
 .honbun{
   float:left;
+  padding-left:30px;
 }
 .string-text{
   width:390px;
@@ -60,8 +72,11 @@ li{
   border:1px solid black;
   resize: none;
 }
+.in-name, .name, .honbun, .string-text{
+  margin-top:-0px;
+  padding:0px 10px;
+}
 .bottom{
-  margin:10px;
   font-size:26px;
   border:1px solid black;
 }
