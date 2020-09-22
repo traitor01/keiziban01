@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>市川生徒専用チャット</title>
+    <title>市川生徒専用チャット1</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
@@ -23,41 +23,10 @@
           </li>
           <li>
             <p class="honbun">本文:<textarea id="in_massage" rows="6" class="string-text" placeholder="入力してください"></textarea>
-<!--javascript->
-              <script>
-                // 入力できる行数の最大値
-                let MAX_LINE_NUM = 6;
-                // テキストエリアの取得
-                let textarea = document.getElementById("in_message");
-                // 入力ごとに呼び出されるイベントを設定
-                textarea.addEventListener("input", function() {
-                 // 各行を配列の要素に分ける
-                  let lines = textarea.value.split("\n");
-                  // 入力行数が制限を超えた場合
-                  if (lines.length > MAX_LINE_NUM) {
-                    var result = "";
-                    for (var i = 0; i < MAX_LINE_NUM; i++) {
-                      result += lines[i] + "\n";
-                    }
-                    textarea.value = result;
-                  }
-                }, false);
-              </script>
-<!--javascript-->
             </p>
           </li>
         </ul>
         <input class="bottom" type="submit" value="送信する">
-<!--
-        </form>
-        <script language="javascript" type="text/javascript">
-        function func1() {
-          var input_message = document.getElementById("input_message").value;
-          input_message = "入力された内容は「" + input_message + "」です。";
-          document.getElementById("output_message").innerHTML = input_message;
-        }
-        </script>
--->
       </div>
       <div class="contents">
       </div>
